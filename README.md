@@ -4,8 +4,8 @@
 
 Website descriptivo del aplicativo movil Treinta
 
-### Tecnologias usadas
-Firebase y  React.js
+### Tecnologias y librerias usadas
+Firebase, React.js, Google Maps API y Iconify.
 
 ### Prototipo
 
