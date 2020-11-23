@@ -1,7 +1,7 @@
 import React from 'react';
 import LogIn from '../Components/LogIn';
 import Navbar from '../Components/Navbar';
-
+import Map from '../Components/Map'
 import Register from '../Components/Register';
 import BenefitsApp from '../Components/BenefitsApp';
 
@@ -27,6 +27,7 @@ export default function Home() {
             </section>
             <section>
                 <h1>Identifica a algunos de nuestros socios</h1>
+                <Map/>
             </section>
         </>
     )
