@@ -1,3 +1,5 @@
+import firebase from 'firebase/app';
+
 var firebaseConfig = {
     apiKey: "AIzaSyD3MepqILYOvlCnTxdFZ_XVh9CUq5-EmNs",
     authDomain: "treinta-1ab4f.firebaseapp.com",
@@ -9,3 +11,8 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  const db = firebase.firestore();
+  const auth = firebase.auth();
+
+  export {db, auth};

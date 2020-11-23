@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "treinta-1ab4f"
+    "default": "treinta-1ab4f",
+    "treinta-prueba": "treinta-1ab4f"
   }
 }
