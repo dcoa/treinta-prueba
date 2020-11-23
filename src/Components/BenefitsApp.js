@@ -6,6 +6,7 @@ import alertCircleOutline from '@iconify/icons-mdi/alert-circle-outline';
 import cashCheck from '@iconify/icons-mdi/cash-check';
 import serverSecurity from '@iconify/icons-mdi/server-security';
 
+
 export default function BenefitsApp() {
     return (
         <table>

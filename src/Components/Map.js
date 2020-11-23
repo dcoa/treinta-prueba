@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 
 const center = {
-    lat: -3.745,
-    lng: -38.523
+    lat: 4.6097100,
+    lng: -74.0817500
 };
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -20,8 +20,8 @@ function Map() {
 
             >
                 <AnyReactComponent
-                    lat={59.955413}
-                    lng={30.337844}
+                    lat={4.6097100}
+                    lng={ -74.0817500}
                     text="My Marker"
                 />
             </GoogleMapReact>

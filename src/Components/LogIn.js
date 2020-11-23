@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Botton from './Botton';
 
 export default function LogIn() {
+    
     return (
         <form>
         <p>Iniciar Sesión</p>
@@ -11,7 +12,7 @@ export default function LogIn() {
         </label>
         <label>
             Contraseña
-           <input tyepe="text" />
+           <input type="password"/>
         </label>
         <Botton text="INGRESAR" />
         <p>¿No tienes cuenta? <a href="#s∫">Registrate</a></p>

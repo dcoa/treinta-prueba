@@ -1,4 +1,6 @@
-import firebase from 'firebase/app';
+import firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/auth";
 
 var firebaseConfig = {
     apiKey: "AIzaSyD3MepqILYOvlCnTxdFZ_XVh9CUq5-EmNs",
@@ -10,9 +12,25 @@ var firebaseConfig = {
     appId: "1:839599330069:web:160a1d482211740f2b0f1c"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
   const db = firebase.firestore();
   const auth = firebase.auth();
 
-  export {db, auth};
+  const signUp = async (email, password, name) => {
+    try {
+      await auth.createUserWithEmailAndPassword(email, password);
+      const currentUser = await auth.currentUser;
+      await currentUser.updateProfile({
+        displayName: name,
+      });
+      console.log(currentUser)
+    } catch (error) {
+      // Handle Errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode, errorMessage);
+    }
+  }
+
+  export {db, signUp};

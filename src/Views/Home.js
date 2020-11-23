@@ -4,6 +4,10 @@ import Navbar from '../Components/Navbar';
 import Map from '../Components/Map'
 import Register from '../Components/Register';
 import BenefitsApp from '../Components/BenefitsApp';
+import { Icon } from '@iconify/react';
+import whatsappIcon from '@iconify/icons-jam/whatsapp';
+import instagramIcon from '@iconify/icons-mdi/instagram';
+import emailOutline from '@iconify/icons-mdi/email-outline';
 
 export default function Home() {
     return (
@@ -29,6 +33,15 @@ export default function Home() {
                 <h1>Identifica a algunos de nuestros socios</h1>
                 <Map/>
             </section>
+            <footer>
+                <p>Contáctate con nosotros a través de</p>
+                <div>
+                <Icon icon={whatsappIcon} style={{color: '#076D16', fontSize: '40px'}} />
+                <Icon icon={instagramIcon} style={{color: '#076D16', fontSize: '40px'}} />
+                <Icon icon={emailOutline} style={{color: '#076D16', fontSize: '40px'}} />
+                </div>
+                <p>Copyright © 2020 Treinta</p>
+            </footer>
         </>
     )
 }
