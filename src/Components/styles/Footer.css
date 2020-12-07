@@ -1,0 +1,13 @@
+.footer {
+    background-color: #FED20A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}

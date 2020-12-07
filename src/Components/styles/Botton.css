@@ -1,0 +1,9 @@
+.botton{
+    width: 250px;
+    height: 50px;
+    color: var(--white);
+    background-color: #03890C;
+    border: 1px solid #076D16;
+    font-size: 18px;
+    font-weight: 700;
+}

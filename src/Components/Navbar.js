@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from '../img/logo.png';
+import './styles/NavBar.css'
 
 
 export default function NavBar() {

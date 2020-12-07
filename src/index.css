@@ -7,3 +7,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #FDFDFD;
 }
+
+.form-container{
+  background-color: #FED20A;
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+}
+.form-background{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 65vh;
+  text-align: center;
+}
+.form-background > label {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+}
+
+.form-background > label > input {
+  border: none;
+  width: 300px;
+  height: 50px;
+  }
+
+  section{
+    width: 100vw;
+    height: 90vh;
+    border-bottom: 3px solid #E5E5E5;
+  }

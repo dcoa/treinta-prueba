@@ -1,11 +1,14 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Botton from './Botton';
+import { FormTitle, LinkForm } from './Text'
 
-export default function LogIn() {
+
+export default function LogIn({setisLogin}) {
     
     return (
-        <form>
-        <p>Iniciar Sesión</p>
+        <div className='form-container'>
+        <form className='form-background'>
+        <FormTitle>Iniciar Sesión</FormTitle>
         <label>
             Correo Electrónico
            <input tyepe="text" />
@@ -15,7 +18,8 @@ export default function LogIn() {
            <input type="password"/>
         </label>
         <Botton text="INGRESAR" />
-        <p>¿No tienes cuenta? <a href="#s∫">Registrate</a></p>
     </form>
+    <p>¿No tienes cuenta? <LinkForm  onClick={() => setisLogin(false)}>Registrate</LinkForm></p>
+    </div>
     )
 }
